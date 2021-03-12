@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example 2</title>
+  </head>
+  <body>
+    <script>
+      //Q: Why userName is accessable in other functions
+      function createUserName() {
+        userName = "Ameen Alam";
+      }
+
+      function modifyUserName() {
+        if (userName) userName = "Daniyal Nagori";
+      }
+
+      function showUserName() {
+        alert(userName);
+      }
+
+      createUserName();
+      showUserName(); // Ameen Alam
+
+      modifyUserName();
+      showUserName(); // Daniyal Nagori
+    </script>
+  </body>
+</html>
