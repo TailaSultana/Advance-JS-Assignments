@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope Example 1</title>
+  </head>
+  <body>
+    <script>
+      var userName = "Ameen ALam";
+
+      function modifyUserName() {
+        userName = "Daniyal Nagori";
+      }
+
+      function showUserName() {
+        alert(userName);
+      }
+
+      alert(userName); // display Ameen Alam
+
+      modifyUserName();
+      showUserName(); // display Daniyal Nagori
+    </script>
+  </body>
+</html>
